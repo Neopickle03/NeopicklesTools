@@ -58,7 +58,7 @@ function getPlaylist(){
       console.log("xhttp request problem occurred")
     }
   }
-  xhttp.open("GET", "api/playlist", true);
+  xhttp.open("GET", "../../data/playlist", true);
   xhttp.send();
 }
 
