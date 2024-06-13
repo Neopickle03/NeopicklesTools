@@ -58,7 +58,7 @@ function getPlaylist(){
       console.log("xhttp request problem occurred")
     }
   }
-  xhttp.open("GET", "../../data/playlist", true);
+  xhttp.open("GET", "../../data/playlist.json", true);
   xhttp.send();
 }
 
@@ -215,7 +215,7 @@ function uploadPlaylist(){
 	}
 	//convert object to JSON and PUT to api
 	let xhttp = new XMLHttpRequest();
-	let url = "/api/playlist"
+	let url = "../../data/playlist.json"
 	xhttp.onreadystatechange = function() {
 		let strResponse = "Error: no response";
 		if (this.readyState == 4 && this.status == 200) {
