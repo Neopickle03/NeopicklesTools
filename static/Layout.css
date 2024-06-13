@@ -1,0 +1,35 @@
+.sticky {
+  position: -webkit-sticky; /* Safari and other incompatible browsers */
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+#navbar a.leftRight {
+  text-align: center;
+  margin: auto;
+  width: 33%;
+}
+#navbar a.mid {
+  text-align: center;
+  margin: auto;
+  width: 34%;
+}
+
+#foot.center {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  /* Addapt the Navigation bar for mobile devices */
+  .border-left{
+    border-left:1px solid #ccc!important
+  }
+  .border-right{
+    border-right:1px solid #ccc!important
+  }
+  .border-bottom{
+    border-bottom:1px solid #ccc!important
+  }
+}
